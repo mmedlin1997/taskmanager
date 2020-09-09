@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="content">
+	<h1 style="text-align: center">Home</h1>
+	
+	<form action="/api/tasks" method="POST">
+		<input type="submit" value="Task List">
+	</form>
+
+</div>
+{% endblock %}
