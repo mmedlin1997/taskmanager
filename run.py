@@ -8,4 +8,4 @@ Created on Mon Aug 31 23:59:12 2020
 from app import app
 
 if __name__ == '__main__':
-   app.run(debug=True)
+   app.run()

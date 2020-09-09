@@ -11,9 +11,11 @@ class Config:
     FLASK_ENV = 'development'
     TESTING = True
     DEBUG = True
+    SERVER_NAME = 'localhost:5000'
 
     # Set DB Variables
     MYSQL_USER = environ.get('MYSQL_USER')
     MYSQL_PASSWORD = environ.get('MYSQL_PASSWORD')
     MYSQL_CURSORCLASS = 'DictCursor'
+    MYSQL_DB = 'taskdb'
     
