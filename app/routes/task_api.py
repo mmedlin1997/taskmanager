@@ -20,8 +20,6 @@ def post_task():
     dt = datetime.utcnow()
     db.create_task_in_db(content, dt)
     return redirect('/api/tasks')
-    #rv = db.read_all_tasks_in_db()
-    #return render_template('tasks.html', tasks=rv)
 
 @task_api.route('/api/tasks/update/submit/<id>', methods=['POST']) # PUT
 def put_task(id):
